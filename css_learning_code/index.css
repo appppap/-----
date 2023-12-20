@@ -1,0 +1,49 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height:100px;
+} */
+
+div {
+    margin:0px;
+    /* 上下内边距 左右内边距 */
+    /* 设置左右边距20px后, 若设置宽度width100%, 
+    此时不再是父元素的100%, 而是100%*父元素宽度 + 20px + 20px; 
+    这样有时会导致页面撑出屏幕, 不美观, 可使用box-sizing属性 */
+    box-sizing: border-box;
+    padding: 15px 20px;
+    /* width: 100%; */
+    width: auto;
+    height:auto;
+    color: rgb(157, 40, 187);
+    /* 边框 虚线 颜色为 */
+    border :5px dotted rgb(77, 48, 48);
+    /* 边框圆角 默认四个角相同尺寸*/
+    border-radius : 18px;
+    background-color: rgb(14, 237, 253);
+    /* 文本居中 */
+    text-align: center;
+}
+
+ul {
+    color: rgb(236, 40, 171);
+}
+
+p {
+    padding: 0px 0px;
+    color: rgb(223, 173, 82);
+    text-align: left;
+    display: inline;
+}
+
+.myTips {
+    color: rgb(75, 94, 59);
+    height: 10px;
+    text-align: left;
+}
+
+a:hover
+{
+    color:rgb(223, 153, 240);
+}
